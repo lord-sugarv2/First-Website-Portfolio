@@ -15,9 +15,7 @@ section {
 }
 
 #particles-js {
-    height: 1000px;
-    width: 800px;
-    margin: 0 auto;
+    height: 100vh;
 }
 
 footer {
