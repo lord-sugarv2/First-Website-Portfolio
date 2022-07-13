@@ -11,7 +11,8 @@
     <meta charset="UTF-8" />
   </head>
   <body>
-        <section class="hero" id="particles-js">
+    <canvas class="header__background" width="1096" height="659" style="width: 100%; height: 100%;"></canvas>
+        <section class="hero">
             <nav>
               <img class="logo" src="src/images/logo.png" alt="Lord Sugar's Logo"/>
               <ul id="nav-list">
@@ -80,9 +81,27 @@
     </footer>
     <script src="src/app.js"></script>
     <script>
-        particlesJS.load('particles-js', 'assets/particles.json', function() {
-        console.log('callback - particles.js config loaded');
+      window.onload = function() {
+        Particles.init({
+          selector: '.header__background',
+          color: '#75A5B7',
+          maxParticles: 130,
+          connectParticles: true,
+          responsive: [
+            {
+              breakpoint: 768,
+              options: {
+                maxParticles: 80
+              }
+            }, {
+              breakpoint: 375,
+              options: {
+                maxParticles: 50
+              }
+            }
+          ]
         });
+      };
     </script>
   </body>
 </html>
