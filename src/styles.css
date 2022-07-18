@@ -152,8 +152,7 @@ p {
 
 .project-image {
     margin-top: 25px;
-    width: 250px;
-    height: 250px;
+
     border-radius: 25px;
     object-fit: cover;
 }
